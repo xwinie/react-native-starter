@@ -4,6 +4,8 @@ const del = require('del');
 const shell = require('gulp-shell');
 const fs = require('fs-extra');
 const path = require('path');
+const image = require('gulp-image');
+ 
 
 ////////////////////////////////////////////////////
 
@@ -17,11 +19,17 @@ env = env.toLowerCase();
 console.log(`The env is (${env})`);
 
 ////////////////////////////////////////////////////
-gulp.task('start', ['clean', 'tslint'], shell.task(['yarn tsc:watch']));
-gulp.task('build', ['clean', 'tslint'], shell.task(['yarn tsc']));
+gulp.task('start', ['clean', 'tslint','image'], shell.task(['yarn tsc:watch']));
+gulp.task('build', ['clean', 'tslint','image'], shell.task(['yarn tsc']));
 gulp.task('test', ['tslint'], shell.task(['node node_modules/jest/bin/jest.js --watch']));
 gulp.task('run-ios', ['build'], shell.task(['node node_modules/react-native/local-cli/cli.js run-ios']));
 gulp.task('run-android', ['build'], shell.task(['node node_modules/react-native/local-cli/cli.js run-android']));
+
+gulp.task('image', function () {
+  gulp.src('./src/images/*')
+    .pipe(image())
+    .pipe(gulp.dest('./build/images'));
+});
 
 gulp.task('tslint', () => {
   return gulp

@@ -1,15 +1,11 @@
-import { Provider } from 'mobx-react';
 import React from 'react';
 import { AppRegistry } from 'react-native';
-import RootNavigator from './route';
-import stores from './stores';
+import Login from './view/login';
 
 export default class ReactNativeStarter extends React.Component {
   public render(): JSX.Element {
     return (
-      <Provider {...stores}>
-        <RootNavigator />
-      </Provider>
+      <Login/>
     );
   }
 }
