@@ -5,7 +5,7 @@ import store from "../../stores/models/login";
 
 const App = () => (
     <Provider login={store}>
-        <Index />
+        <Index/>
     </Provider>
 );
 

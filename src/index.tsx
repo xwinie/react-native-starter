@@ -1,11 +1,11 @@
 import React from 'react';
 import { AppRegistry } from 'react-native';
-import Login from './view/login';
+import App from './App';
 
 export default class ReactNativeStarter extends React.Component {
   public render(): JSX.Element {
     return (
-      <Login/>
+      <App/>
     );
   }
 }
