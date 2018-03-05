@@ -27,9 +27,9 @@ class Login extends React.Component<LoginProps & RouteComponentProps<{}>, {}> {
     }
     submit = (e: Event): void => {
         e.preventDefault();
-         const {history} = this.props;
+        const { history } = this.props;
         const login = this.props.login as LoginView;
-        if (login.username.length > 0 && login.password.length > 0) {
+        if (login && login.username && login.password) {
             Toast.success('正在登录')
             history.push('/home');
         } else {

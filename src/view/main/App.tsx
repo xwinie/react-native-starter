@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 import { TabBar, SearchBar } from 'antd-mobile';
-
+import BasicTabsExample from './BasicTabsExample'
 export default class App extends React.Component<any, any> {
     constructor(props) {
         super(props);
@@ -37,16 +37,19 @@ export default class App extends React.Component<any, any> {
             >
                 <TabBar.Item
                     title="Life"
+                    icon={require('../../images/alipay.png')}
+                    selectedIcon={require('../../images/alipay_sel.png')}
                     selected={this.state.selectedTab === 'blueTab'}
                     onPress={() => this.onChangeTab('blueTab')}
                 >
-                    {this.state.selectedTab === 'blueTab' ?
-                        <About /> : ''
-                    }
+                    <BasicTabsExample />
                 </TabBar.Item>
                 <TabBar.Item
                     title="Koubei"
                     badge={2}
+                    icon={require('../../images/koubei.png')}
+                    selectedIcon={require('../../images/koubei_sel.png')}
+
                     selected={this.state.selectedTab === 'redTab'}
                     onPress={() => this.onChangeTab('redTab')}
                 >
@@ -54,6 +57,9 @@ export default class App extends React.Component<any, any> {
                 </TabBar.Item>
                 <TabBar.Item
                     title="Friend"
+                    icon={require('../../images/friend.png')}
+                    selectedIcon={require('../../images/friend_sel.png')}
+
                     selected={this.state.selectedTab === 'greenTab'}
                     onPress={() => this.onChangeTab('greenTab')}
                 >
@@ -61,6 +67,9 @@ export default class App extends React.Component<any, any> {
                 </TabBar.Item>
                 <TabBar.Item
                     title="My"
+                    icon={require('../../images/busi.png')}
+                    selectedIcon={require('../../images/busi_sel.png')}
+
                     selected={this.state.selectedTab === 'yellowTab'}
                     onPress={() => this.onChangeTab('yellowTab')}
                 >
@@ -71,13 +80,3 @@ export default class App extends React.Component<any, any> {
     }
 
 }
-
-const About = () => (
-    <View style={{ flex: 1, alignItems: 'center', backgroundColor: 'white' }}>
-        <SearchBar
-            placeholder="Search"
-            showCancelButton
-        />
-        <Text style={{ margin: 50 }}>abort</Text>
-    </View>
-)
