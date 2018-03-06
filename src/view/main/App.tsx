@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 import { TabBar, SearchBar } from 'antd-mobile';
-import BasicTabsExample from './BasicTabsExample'
+import Main from './Main'
 export default class App extends React.Component<any, any> {
     constructor(props) {
         super(props);
@@ -42,7 +42,7 @@ export default class App extends React.Component<any, any> {
                     selected={this.state.selectedTab === 'blueTab'}
                     onPress={() => this.onChangeTab('blueTab')}
                 >
-                    <BasicTabsExample />
+                    {this.renderContent('blueTab')}
                 </TabBar.Item>
                 <TabBar.Item
                     title="Koubei"
@@ -53,7 +53,7 @@ export default class App extends React.Component<any, any> {
                     selected={this.state.selectedTab === 'redTab'}
                     onPress={() => this.onChangeTab('redTab')}
                 >
-                    {this.renderContent('Koubei Tab')}
+                    <Main />
                 </TabBar.Item>
                 <TabBar.Item
                     title="Friend"

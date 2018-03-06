@@ -84,6 +84,13 @@
   version "16.0.30"
   resolved "http://registry.npm.taobao.org/@types/react/download/@types/react-16.0.30.tgz#cca9b180160004df574519c3d7c559fb181d545f"
 
+MD5@~1.2.0:
+  version "1.2.2"
+  resolved "http://registry.npm.taobao.org/MD5/download/MD5-1.2.2.tgz#d903c8ec5ba223cd2b80432824881d04bb9841c0"
+  dependencies:
+    charenc ">= 0.0.1"
+    crypt ">= 0.0.1"
+
 abab@^1.0.3:
   version "1.0.4"
   resolved "http://registry.npm.taobao.org/abab/download/abab-1.0.4.tgz#5faad9c2c07f60dd76770f71cf025b62a63cfd4e"
@@ -1339,6 +1346,10 @@ chardet@^0.4.0:
   version "0.4.2"
   resolved "http://registry.npm.taobao.org/chardet/download/chardet-0.4.2.tgz#b5473b33dc97c424e5d98dc87d55d4d8a29c8bf2"
 
+"charenc@>= 0.0.1":
+  version "0.0.2"
+  resolved "http://registry.npm.taobao.org/charenc/download/charenc-0.0.2.tgz#c0a1d2f3a7092e03774bfa83f14c0fc5790a8667"
+
 cheerio@^1.0.0-rc.2:
   version "1.0.0-rc.2"
   resolved "http://registry.npm.taobao.org/cheerio/download/cheerio-1.0.0-rc.2.tgz#4b9f53a81b27e4d5dac31c0ffd0cfa03cc6830db"
@@ -1673,6 +1684,10 @@ cross-spawn@^5.0.1, cross-spawn@^5.1.0:
     shebang-command "^1.2.0"
     which "^1.2.9"
 
+"crypt@>= 0.0.1":
+  version "0.0.2"
+  resolved "http://registry.npm.taobao.org/crypt/download/crypt-0.0.2.tgz#88d7ff7ec0dfb86f713dc87bbb42d044d3e6c41b"
+
 cryptiles@2.x.x:
   version "2.0.5"
   resolved "http://registry.npm.taobao.org/cryptiles/download/cryptiles-2.0.5.tgz#3bdfecdc608147c1c67202fa291e7dca59eaa3b8"
@@ -1978,6 +1993,14 @@ detect-libc@^1.0.2:
 diff@^3.2.0:
   version "3.4.0"
   resolved "http://registry.npm.taobao.org/diff/download/diff-3.4.0.tgz#b1d85507daf3964828de54b37d0d73ba67dda56c"
+
+dimensions@^0.1.0:
+  version "0.1.0"
+  resolved "http://registry.npm.taobao.org/dimensions/download/dimensions-0.1.0.tgz#e0db013ad204b7f7b382df43f9888b20be6544f4"
+  dependencies:
+    MD5 "~1.2.0"
+    image-size "~0.2.1"
+    wget "0.0.1"
 
 discontinuous-range@1.0.0:
   version "1.0.0"
@@ -3299,6 +3322,10 @@ ieee754@^1.1.4:
 image-size@^0.6.0:
   version "0.6.1"
   resolved "http://registry.npm.taobao.org/image-size/download/image-size-0.6.1.tgz#98122a562d59dcc097ef1b2c8191866eb8f5d663"
+
+image-size@~0.2.1:
+  version "0.2.5"
+  resolved "http://registry.npm.taobao.org/image-size/download/image-size-0.2.5.tgz#7cea13f49c191319722fadd961b9f30363eec88f"
 
 imurmurhash@^0.1.4:
   version "0.1.4"
@@ -6960,6 +6987,10 @@ tunnel-agent@^0.6.0:
   dependencies:
     safe-buffer "^5.0.1"
 
+tunnel@0.0.2:
+  version "0.0.2"
+  resolved "http://registry.npm.taobao.org/tunnel/download/tunnel-0.0.2.tgz#f23bcd8b7a7b8a864261b2084f66f93193396334"
+
 tween-functions@^1.0.1:
   version "1.2.0"
   resolved "http://registry.npm.taobao.org/tween-functions/download/tween-functions-1.2.0.tgz#1ae3a50e7c60bb3def774eac707acbca73bbc3ff"
@@ -7312,6 +7343,12 @@ webidl-conversions@^3.0.0:
 webidl-conversions@^4.0.0:
   version "4.0.2"
   resolved "http://registry.npm.taobao.org/webidl-conversions/download/webidl-conversions-4.0.2.tgz#a855980b1f0b6b359ba1d5d9fb39ae941faa63ad"
+
+wget@0.0.1:
+  version "0.0.1"
+  resolved "http://registry.npm.taobao.org/wget/download/wget-0.0.1.tgz#8bb81af0b8e60b5df262d3c81e5737e1f4931e53"
+  dependencies:
+    tunnel "0.0.2"
 
 whatwg-encoding@^1.0.1:
   version "1.0.3"

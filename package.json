@@ -14,6 +14,7 @@
   "dependencies": {
     "@types/react-router-native": "^4.2.0",
     "antd-mobile": "^2.1.1",
+    "dimensions": "^0.1.0",
     "formstate": "^1.0.0",
     "gulp-image": "^4.3.0",
     "mobx": "^3.4.1",
